@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Latest cool stuff at Mozilla</title>
+
+		<meta name="description" content="Latest cool stuff at Mozilla">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+    <section>
+        <h1>
+<br>
+        <span>
+            <span>
+            </span>
+        </span>
+</h1>
+<h1>
+        <span>
+            <span>Latest cool stuff at Mozilla</span>
+        </span>
+    </h1>
+<p>
+    <br>
+</p>
+<p>Valentin Gosu</p>
+<blockquote>valentin@mozilla.ro</blockquote>
+<br>
+</section>
+<section>
+    <h2>New Projects</h2>
+<p>
+    <br>
+</p>
+<p>Rust</p>
+<p>Servo</p>
+<p>Sync &amp; PICL</p>
+<p>Emscripten &amp; asm.js
+</p>
+<p>WebRTC</p>WebAPIs &amp; Firefox OS<br>
+<br>
+<p>
+<br>
+</p>
+<p>
+<br>
+</p>
+<p>
+</p>
+</section>
+<section>
+    <section>
+        <h2>Rust</h2>
+<p>
+        <br>
+    </p>
+<p>Yet another programming language?</p>
+<p>
+    <br>
+</p>
+<p>&nbsp;<br>
+</p>
+</section>
+<section>
+    <h2>EXAMPLE</h2>
+<p>
+    <br>
+</p>
+<p>Your first rust program</p>
+<p>
+<br>
+</p>
+<blockquote>
+<pre><code class="cs">fn main() {
+    <span class="keyword">let</span> nums = [<span class="number">1</span>, <span class="number">2</span>];
+    <span class="keyword">let</span> noms = [<span class="string">"Tim"</span>, <span class="string">"Eston"</span>, <span class="string">"Aaron"</span>, <span class="string">"Ben"</span>];
+ 
+    <span class="keyword">let</span> mut odds = nums.iter().map(|&amp;x| x * <span class="number">2</span> - <span class="number">1</span>);
+ 
+    <span class="keyword">for</span> num <span class="keyword">in</span> odds {
+        <span class="keyword">do</span> spawn {
+            println(<span class="string">"{:s} says hello from a lightweight thread!"</span>, noms[num]);
+        }
+    }
+}</code></pre>
+</blockquote>
+<br>
+</section>
+<section>
+    <h2>What's good in it?</h2>
+<p>
+    <br>
+</p>
+<p>1. Safety</p>
+<p>2. <i>
+<b>Safety</b>
+</i>
+</p>
+<p>3. Speed</p>
+<p>4. Object oriented</p>
+<p>5. Tasks</p>
+<p>6. Pointers<br>
+</p>
+<p>
+<br>
+</p>
+<p>
+<br>
+</p>
+</section>
+<section>
+    <h2>LEARN MORE</h2>
+<p>
+    <br>
+</p>
+<blockquote>
+<p>http://www.rust-lang.org/<br>
+</p>
+</blockquote>
+<br>
+<img style="width: 253.632px; height: 253.632px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/valentingosu/images/145996/rust-logo-128x128-blk-v2_1_.png">
+</section>
+</section>
+<section>
+    <section>
+        <h2>SERVO</h2>
+<p>
+        <br>
+    </p>
+<p>A next generation browser engine experiment</p>
+<p>
+    <br>
+</p>
+<p>Written in Rust</p>
+<p>Uses multicore capabilities</p>
+<p>Better architecture</p>
+<p>
+<br>
+</p>
+<p>
+<br>
+</p>
+<p>
+<br>
+</p>
+</section>
+<section>&nbsp;<h2 style="position: absolute; width: 966px; height: 547px; z-index: 4; left: -4px; top: 21px;" class="absolute-element">Task communication<img style="width: 931px; height: 506.297px; max-height: none; max-width: none;" src="https://raw.github.com/wiki/mozilla/servo/tasks-comm.png">
+    <br>
+</h2>
+</section>
+</section>
+<section>
+    <section>
+        <h2>Sync &amp; PICL</h2>
+<p>
+        <br>
+        </p>
+<img style="position: absolute; max-height: none; max-width: none; width: 221px; height: 245px; z-index: 4; left: 524px; top: 208px;" class="absolute-element" src="data:image/jpeg;base64,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">
+        <img style="position: absolute; max-height: none; max-width: none; width: 274.501px; height: 321.889px; z-index: 4; left: 191px; top: 176px;" class="absolute-element" src="http://www.realtor.com/home-garden/Images/Kohler-memoirs-pedestal-sink-27_tcm12-20726.jpg">
+    </section>
+    <section>
+        <h2>Firefox SYNC</h2>
+<p>
+        <br>
+        </p>
+<p>Synchronizes your Firefox data between PCs and devices</p>
+<p> <b>End to end encryption</b>
+    </p>
+<blockquote>
+    <p>You hold all the keys<br>
+</p>
+</blockquote>
+<p>A bit difficult to use<br>
+</p>
+</section>
+<section>
+    <h2>PICL</h2>
+<blockquote>
+<p>Stands for <font color="#ff0000">P</font>rofile <font color="#ff0000">I</font>n the <font color="#ff0000">CL</font>oud</p>
+<p>
+    <br>
+</p>
+</blockquote>
+<div align="center">
+<br>
+<ul>
+<li>The next version of Firefox Sync</li>
+<li>Email+Password authentication</li>
+<li>Some things may be decrypted if your password is stolen</li>
+<li>A lot more usable by the average user</li>
+</ul>
+</div>
+</section>
+</section>
+<section>
+    <section>
+        <h2>EmScripten &amp; asm.js</h2>
+<p>
+        <br>
+    </p>
+<p>Emscripten is a compiler, that translates C/C++ code to Javascript</p>
+<p>
+    <br>
+</p>
+<p>ASM.js is a subset of Javascript that runs much faster in the browser (close to native speed)</p>
+<p>
+<br>
+</p>
+<p>
+<br>
+</p>
+</section>
+<section>
+    <h2>What Can it do?</h2>
+<p>
+    <br>
+</p>
+<p>
+<br>
+</p>
+<blockquote>
+<p>https://github.com/kripken/emscripten/wiki<br>
+</p>
+</blockquote>
+<br>
+<br>Check out the demos section<br>full of games that now run exclusively in Javascript<br>
+</section>
+</section>
+<section>
+    <section>
+        <h2>WebRTC</h2>
+<p>
+        <br>
+    </p>
+<p>Stands for Web RealTime Communication</p>
+<p>
+    <br>
+</p>
+<p>Provides a simple Javascript API for transmitting <br>
+</p>
+<p>video, audio and data</p>
+<p>
+<br>
+</p>
+<p>Supported in Firefox, Chrome and Opera<br>
+</p>
+<p>
+<br>
+</p>
+<p>
+<br>
+</p>
+</section>
+<section>
+    <h2>What can it Do?</h2>
+<p>
+    <br>
+</p>
+<p>Video chat with friends</p>
+<blockquote>
+<p>http://apprtc.appspot.com<br>
+</p>
+</blockquote>
+<br>Share files P2P<br>
+<blockquote>http://www.sharefest.me<br>
+</blockquote>
+<br>Play games<br>
+<blockquote>https://www.cubeslam.com<br>
+</blockquote>
+<br>
+</section>
+</section>
+<section>
+    <h2>WebAPI &amp; FIREFOX OS</h2>
+<p>
+    <br>
+</p>
+<p>The web needs to access your hardware</p>
+<p>Thing you couldn't do one year ago</p>
+<p>Some APIs are only available on some platforms<br>
+</p>
+</section>
+<section>
+    <section>
+        <h2>
+            <br>
+        </h2>
+<h2>
+        <br>
+    </h2>
+<h2>
+    <br>
+</h2>
+<h2>THE BEST thing</h2>
+<p>
+<br>
+</p>
+<br>
+</section>
+<section>
+    <h2>
+        <br>
+    </h2>
+<p>
+    <br>
+</p>
+<blockquote>
+<p>You can be part of it!<br>
+</p>
+</blockquote>
+<br>Our mission is to promote openness, <br>innovation &amp; opportunity on the Web.<img class="absolute-element" style="width: 154.652px; height: 124px; max-height: none; max-width: none; position: absolute; z-index: 4; left: 629px; top: 487px;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/valentingosu/images/146357/firefox-os.png">
+<img class="absolute-element" style="width: 168.882px; height: 116px; max-height: none; max-width: none; position: absolute; z-index: 4; left: 156px; top: 491px;" src="http://upload.wikimedia.org/wikipedia/commons/5/5c/Mozilla_dinosaur_head_logo.png">
+<img style="position: absolute; max-height: none; max-width: none; width: 125px; height: 133px; z-index: 4; left: 412px; top: 484px;" class="absolute-element" src="http://mozorg.cdn.mozilla.net/media/img/home/firefox.png?2013-06">
+</section>
+</section>
+</div>
+
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
